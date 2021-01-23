@@ -1,0 +1,68 @@
+@import '../../styles/vars';
+
+.tariff-card {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background: url('../../images/fon.jpg');
+}
+
+.tariff-card__body {
+  padding: 0 15px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tariff-card__name {
+  font-size: 1.2em;
+  color: $black;
+  margin-bottom: 8px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.tariff-card__description {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.tariff-card__dates {
+  font-size: 0.9em;
+  span {
+    display: block;
+  }
+}
+.tariff-card__date-creation {
+ display: flex;
+ flex-direction: column;
+ span {
+   margin-bottom: 4px;
+ }
+}
+
+.tariff-card__button-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 35px;
+  padding-right: 15px;
+  padding-top: 15px;
+
+  .button {
+    color: $primary;
+    background: url('../../images/delete.svg');
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+}

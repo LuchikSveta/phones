@@ -1,0 +1,14 @@
+@import '../../../styles/vars';
+.add-services__body {
+  width: 350px;
+}
+
+.add-services__service-item {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.add-services__service-item_active {
+  background: transparentize($link-color, 0.3);
+  color: white;
+}

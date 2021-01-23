@@ -1,0 +1,41 @@
+@import '../../styles/vars';
+.modal-background {
+  background: rgba(0,0,0,.4);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-window {
+  position: absolute;
+  background: url('../../images/fon.jpg');
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 15px;
+}
+.modal-window__title {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.modal-window__body {
+  margin-bottom: 15px;
+}
+.modal-window__buttons-group {
+  display: flex;
+  justify-content: flex-end;
+  .button {
+    font-weight: 500;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+  .button-ok {
+    color: link-color;
+    margin-left: 15px;
+  }
+}
